@@ -147,8 +147,8 @@ class GeoIP{
           $this->retrievefromCache();
 
 		if(isset($this->geoip_data->$name)){
-		  	return $this->geoip_data->$name;
-        }
+			return $this->geoip_data->$name;
+		}
         return "";
    }
 
