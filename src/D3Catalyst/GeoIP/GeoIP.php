@@ -41,6 +41,7 @@ class GeoIP{
   * @return void
   */
   public function setIP($ip){
+    $this->geoip_data = NULL;
     $this->ip = $ip;
   }
 
@@ -50,7 +51,7 @@ class GeoIP{
   * @return string
   */
   public function getCountry(){
-			return $this->getItem('country');
+	return $this->getItem('country');
    }
 
   /**
