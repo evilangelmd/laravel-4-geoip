@@ -183,7 +183,7 @@ class GeoIP{
           else
           {
               $this->geoip_data = $this->resolve($this->ip);
-              \Cache::put($cache_key, $this->geoip_data , 60*60);
+              \Cache::put($cache_key, $this->geoip_data , 3600 * 365);
           }
       }
       else
